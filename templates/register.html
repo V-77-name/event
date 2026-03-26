@@ -2,10 +2,22 @@
 
 <form action="/submit" method="post">
 
-Name: <input type="text" name="name"><br><br>
-Class: <input type="text" name="class"><br><br>
-Section: <input type="text" name="section"><br><br>
-Roll: <input type="text" name="roll"><br><br>
+Name: <input type="text" name="name" required><br><br>
+
+Class: <input type="number" name="class" min="1" max="12" required><br><br>
+
+Section:
+<select name="section" required>
+    <option value="">Select</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+    <option>D</option>
+</select>
+
+<br><br>
+
+Roll: <input type="number" name="roll" required><br><br>
 
 Event:
 <select name="event">
